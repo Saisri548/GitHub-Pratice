@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    color:red;
+    background: pink;
+}
+#id{
+    color:red;
+    padding-top:10px;
+}
+.Paragraph{
+    color:magenta;
+    padding-bottom:25px;
+}
+h1 p{
+    color:yellowgreen;
+    padding-left:25px;
+}
+input[type="text"]{
+    color:crimson;
+
+}
+p:hover{
+    color:deepskyblue;
+    background-color: fuchsia;
+}
+p::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: red;
+}
+
+.c1{
+  display:inline-block;
+  width: 200px;
+  height:200px;
+  background:yellow;
+  margin: 10px;
+}
+.msg{
+    display:none;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    width:200px;
+    height:150px;
+}
+.grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+   
+}
+
+.icon {
+  position: relative;
+  width: 40px;
+  font-size: 24px;
+}
+
+.badge {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+.box4{
+    width:100px;
+    height:200px;
+    background-color: blue;
+    position: absolute;
+}
+.card{
+    width:200px;
+    height:200px;
+    background-color: bisque;
+   position:relative;
+}
+.btn{
+    position:absolute;
+    bottom:25px;
+    right:30px;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: blue;
+  color: white;
+}
+
+.content {
+  height: 2000px;
+  margin-top: 60px;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  background: orange;
+}
+.hero {
+ display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+   background: url('https://lovefortraveling.com/wp-content/uploads/2025/01/Views-of-Kiyomizu-dera-temple-in-Kyoto-Japan.jpeg');
+
+/*  This is what transforms the background from image to a chosen color (mine is white OR #fff)
+    some browsers do not support this function so a webkit property is need (as stated below).
+    Now set the text to have a color of transparent. Follow link https://css-tricks.com/how-to-do-knockout-text/
+*/
+  background-clip: text;
+  -webkit-background-clip: text;
+    background-size: cover;
+  background-position: center;
+
+}
+
+#real {
+  font-size: 10rem;
+  font-weight: 900;
+  color: transparent;
+
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.ele{
+    font-size:200px;
+    font-weight: bold;
+    line-height:0px;
+    color:black;
+    letter-spacing:0;
+    text-align: center;
+}
+.num {
+  position: relative;
+  font-size: 200px;
+  font-weight: bold;
+}
+.one {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+.zero1 {
+  position: absolute;
+  left: 60px;
+  top: 0;
+  z-index: 2;
+}
+.zero2 {
+  position: absolute;
+  left: 120px;
+  top: 0;
+  z-index: 1;
+}
+.containerA {
+    display: flex;
+    gap: 10px; /* IMPORTANT so you can SEE separation */
+}
+
+.containerA div {
+    width: 100px;
+    height: 200px;
+    background-color: red;
+}
+.containerB {
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* IMPORTANT so you can SEE separation */
+}
+
+.containerB div {
+    width: 100px;
+    height: 200px;
+    background-color: red;
+}
+.grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
